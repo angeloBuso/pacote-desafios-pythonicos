@@ -8,9 +8,22 @@ for menor que 2, retorne uma string vazia.
 """
 
 def both_ends(s):
-    # +++ SUA SOLUÇÃO +++
-    return
+    # +++ SUA SOLUÇÃO 1 +++
+    #if len(s) > 2:
+    #    slice = s[0] + s[1] + s[-2] + s[-1]
+    #else:
+    #    slice = ""
+    #return slice
 
+    # +++ SUA SOLUÇÃO 2 +++
+    #if len(s) > 2:
+    #    slice= s[:2]+s[-2:]
+    #else:
+    #    slice= ''
+    #return slice
+
+    # +++ SUA SOLUÇÃO 3 +++
+    return s[:2]+s[-2:] if len(s) > 2 else ''
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
 
